@@ -728,7 +728,7 @@ between the M series and Linux.
 [Here](./no_macros.s), presented first, is the source code adapted for
 the M series without the benefit of our macro suite:
 
-```text
+```asm
     .global _main                                                   // 1 
                                                                     // 2 
 _main:                                                              // 3 
@@ -771,7 +771,7 @@ M family and upon Linux.
 
 The documentation can be found [here](./../../macros/).
 
-```text
+```asm
 #include "apple-linux-convergence.S"                        // 1 
                                                             // 2 
         .text                                               // 3 
@@ -846,7 +846,7 @@ also a `cbnz` instruction. To test for other Boolean conditions, use
 While this chapter is entitled "Hello World," the example used isn't
 actually "Hello World." Here is a "Hello World" for you to complete:
 
-```text
+```asm
    .global main                                                       
 main:                                                                 
     str     x30, [sp, -16]!         // Preserve x30
